@@ -7,7 +7,7 @@
   "module": "jn2vextab.esm.js",
   "types": "jn2vextab.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest --config jestconfig.json",
     "copy": "node tools/copy-package.js && node tools/cleanup.js",
     "bundle": "rimraf dist && /Users/lil-works1/.npm-packages/lib/node_modules/rollup/bin/rollup -c rollup.config.umd.js && /Users/lil-works1/.npm-packages/lib/node_modules/rollup/bin/rollup -c rollup.config.esm.js && tsc && ngc",
     "postbundle": "node tools/removecode.js",
@@ -31,11 +31,14 @@
   },
   "devDependencies": {
     "@angular/compiler-cli": "^7.0.2",
+    "@types/jest": "^23.3.9",
     "del": "^3.0.0",
+    "jest": "^23.6.0",
     "node-sass": "^4.9.4",
     "rollup-plugin-angular": "^0.5.3",
     "rollup-plugin-commonjs": "^9.2.0",
     "rollup-plugin-node-resolve": "^3.4.0",
-    "rollup-plugin-typescript": "^1.0.0"
+    "rollup-plugin-typescript": "^1.0.0",
+    "ts-jest": "^23.10.4"
   }
 }

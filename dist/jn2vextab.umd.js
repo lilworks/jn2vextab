@@ -33,6 +33,26 @@
     var Jn2VextabService = /** @class */ (function () {
         function Jn2VextabService() {
         }
+        Jn2VextabService.prototype.jnToVextab = function (jnElement) {
+            return { x: jnElement.x, y: jnElement.y };
+        };
+        Jn2VextabService.prototype.jnArrayToVextabArray = function (jnArray) {
+            var a = [];
+            jnArray.forEach(function (jnElement) {
+                a.push({ x: jnElement.x, y: jnElement.y });
+            });
+            return a;
+        };
+        Jn2VextabService.prototype.vexTabArrayToString = function (vextabArray) {
+            var a = [];
+            vextabArray.forEach(function (vextabElement) {
+                a.push(vextabElement.x + "/" + vextabElement.y);
+            });
+            return a.join(" ");
+        };
+        Jn2VextabService.prototype.jnArrayToVextabString = function (jnArray) {
+            return this.vexTabArrayToString(this.jnArrayToVextabArray(jnArray));
+        };
         Jn2VextabService = __decorate([
             core.Injectable(),
             __metadata("design:paramtypes", [])

@@ -1,6 +1,6 @@
 {
   "name": "jn2vextab",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "jn2vextab.umd.js",
   "jsnext:main": "jn2vextab.esm.js",

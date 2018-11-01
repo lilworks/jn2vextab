@@ -10,5 +10,6 @@
       "outDir": "./dist",
       "lib": ["es2015", "dom"]
    },
-   "files": ["./lib/jn2vextab.ts"]
+   "files": ["./lib/jn2vextab.ts"],
+   "exclude": ["node_modules", "**/__tests__/*"]
 }

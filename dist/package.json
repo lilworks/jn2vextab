@@ -1,0 +1,25 @@
+{
+  "name": "jn2vextab",
+  "version": "1.0.0",
+  "description": "",
+  "main": "jn2vextab.umd.js",
+  "jsnext:main": "jn2vextab.esm.js",
+  "module": "jn2vextab.esm.js",
+  "types": "jn2vextab.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lilworks/jn2vextab.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lilworks/jn2vextab/issues"
+  },
+  "homepage": "https://github.com/lilworks/jn2vextab#readme",
+  "dependencies": {
+    "@angular/compiler": "^7.0.2",
+    "@angular/core": "^7.0.2",
+    "rxjs": "^6.3.3",
+    "typescript": "^3.1.5"
+  }
+}
